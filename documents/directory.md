@@ -30,7 +30,7 @@ macmini-ssuzuki:~ ssuzuki$
 |   |   |-- (何かのファイル)
 |   |   `-- (何かのファイル)
 |   `-- ssuzuki
-|       |-- Desctop
+|       |-- Desktop
 |       |-- Documents
 |       |   `-- About Stacks.lpdf
 |       |-- Downloads
