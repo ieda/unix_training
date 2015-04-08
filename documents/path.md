@@ -53,34 +53,15 @@ kenshu
 `-- test2
 ```
 
-* ホームディレクトリに移動してください
-* `cd kenshu/test2`と入力してください
-    * `test2`に移動した
-* `cd ../test1/test11`と入力してください
-    * `test11`に移動した
-* `cd ./../../test2`と入力してください
-    * `test2`に移動した
-* `cd ~/../../Users/(自分のユーザ名)`と入力してください
-    * ホームディレクトリの2つ上のディレクトリの下の`Users/(自分のユーザ名)`ディレクトリ
-    * つまり結局ホームディレクトリ
+* 相対パスを使って、cdコマンド1回でやってみよう
+    * ホームディレクトリに移動してください
+    * `test1`ディレクトリに移動してください
+    * `test11`ディレクトリに移動してください
+    * `test12`ディレクトリに移動してください
+    * `test2`ディレクトリに移動してください
+    * `cd ~/../../Users/(自分のユーザ名)`と入力してください
+        * これはつまり...？
 
-```
-macmini-ssuzuki:~ ssuzuki$ pwd
-/Users/ssuzuki
-macmini-ssuzuki:~ ssuzuki$ cd kenshu/test2
-macmini-ssuzuki:test2 ssuzuki$ pwd
-/Users/ssuzuki/kenshu/test2
-macmini-ssuzuki:test2 ssuzuki$ cd ../test1/test11
-macmini-ssuzuki:test11 ssuzuki$ pwd
-/Users/ssuzuki/kenshu/test1/test11
-macmini-ssuzuki:test11 ssuzuki$ cd ./../../test2
-macmini-ssuzuki:test2 ssuzuki$ pwd
-/Users/ssuzuki/kenshu/test2
-macmini-ssuzuki:test2 ssuzuki$ cd ~/../../Users/ssuzuki
-macmini-ssuzuki:~ ssuzuki$ pwd
-/Users/ssuzuki
-macmini-ssuzuki:~ ssuzuki$
-```
 
 * 相対パスは`/`で区切って何階層でも表すことができる
 * パスを指定するタイプのコマンドは、基本的に相対パスも絶対パスも使うことができる
